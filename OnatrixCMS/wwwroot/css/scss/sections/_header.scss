@@ -1,0 +1,20 @@
+
+
+
+#topbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+    .socialmedia {
+        a {
+            border-left: 1px solid var(--color-accent);
+
+            &.last {
+                border-right: 1px solid var(--color-accent);
+            }
+        }
+    }
+
