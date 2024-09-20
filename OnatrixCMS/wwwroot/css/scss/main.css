@@ -260,7 +260,6 @@ p {
 }
 #Hero-Section {
   position: relative;
-  margin-bottom: 2rem;
 }
 #Hero-Section .background {
   position: absolute;
@@ -310,9 +309,8 @@ p {
 }
 #Our-Story .background-image {
   position: absolute;
-  left: 20%;
-  top: 18%;
-  width: 61vw;
+  top: 6%;
+  z-index: -5;
 }
 #Our-Story h2 {
   padding-left: 20%;
@@ -320,9 +318,44 @@ p {
 }
 #Our-Story h3 {
   font-size: 40px;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 #Our-Story .btn {
-  margin-top: 5rem;
-  margin-bottom: 11rem;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+#Success {
+  position: relative;
+  /* .image-success {
+      margin-top: 3rem;
+  }*/
+}
+#Success .background {
+  position: absolute;
+  height: 75%;
+  width: 100vw;
+  max-width: 99.9%;
+  z-index: -1;
+}
+#Success .background-image {
+  position: absolute;
+  top: 6%;
+}
+#Success h1 {
+  color: var(--color-secondary);
+}
+#Success h2 {
+  color: var(--color-light);
+}
+#Success h6 {
+  padding-top: 1rem;
+}
+#Success p {
+  color: var(--color-light);
+  padding-right: 2em;
+  padding-left: 2em;
+}
+#Success img:not(.background-image) {
+  margin-top: 3rem;
 }

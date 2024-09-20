@@ -1,0 +1,41 @@
+#Success {
+    position: relative;
+
+    .background {
+        position: absolute;
+        height: 75%;
+        width: 100vw;
+        max-width: 99.9%;
+        z-index: -1;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 6%;
+    }
+
+    h1 {
+        color: var(--color-secondary);
+    }
+
+    h2 {
+        color: var(--color-light);
+    }
+
+    h6 {
+        padding-top: 1rem;
+    }
+
+    p {
+        color: var(--color-light);
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    /* .image-success {
+        margin-top: 3rem;
+    }*/
+
+    img:not(.background-image) {
+        margin-top: 3rem;
+    }
+}

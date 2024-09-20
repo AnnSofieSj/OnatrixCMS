@@ -5,8 +5,9 @@
 @{
     var selectedImage = Model?.Content.Value<IPublishedContent>("selectedImage")?.Url() ?? null;
     var imageDescription = Model?.Content.Value<string>("imageDescription") ?? "";
+    var imageClassName = Model?.Content.Value<string>("imageClassName") ?? "";
 }
 
 @if (!string.IsNullOrEmpty(selectedImage)) {
-    <img src="@selectedImage" alt="@imageDescription">
+    <img src="@selectedImage" alt="@imageDescription" class="@imageClassName">
 }
