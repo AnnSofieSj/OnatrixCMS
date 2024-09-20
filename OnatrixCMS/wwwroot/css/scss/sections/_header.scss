@@ -5,16 +5,33 @@
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 }
 
-    .socialmedia {
-        a {
-            border-left: 1px solid var(--color-accent);
+.socialmedia {
+   
+}
 
-            &.last {
-                border-right: 1px solid var(--color-accent);
-            }
+#header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding-top:1em;
+        padding-bottom:1em;
+
+        .logotype {
+
+        }
+        .nav-menu {
+
+        }
+        .search {
+
         }
     }
+}
 

@@ -22,12 +22,14 @@
         <div class="background @backgroundColorClass"></div>
 }
 
-@if (!String.IsNullOrEmpty(sectionBackgroundImage))
-{
-    <img class="background-image" src="@sectionBackgroundImage" alt="@sectionTitle background image" />
-} 
+    <div class="@centerContentClass container-fluid">
 
-    <div class="container @centerContentClass">         
+    @if (!String.IsNullOrEmpty(sectionBackgroundImage))
+    {
+        <img class="background-image" src="@sectionBackgroundImage" alt="@sectionTitle background image" />
+    }
+    
         @await Html.GetBlockGridItemAreasHtmlAsync(Model)
+    
     </div>
 </section>

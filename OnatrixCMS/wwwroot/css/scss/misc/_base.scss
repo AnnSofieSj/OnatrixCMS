@@ -26,3 +26,14 @@ body {
     font-size: 16px;
     color: #535656;
 }
+
+.spacing-top {
+    padding-top: 6rem;
+}
+.spacing-bottom {
+    padding-bottom: 6rem;
+}
+ .center {
+     text-align:center;
+     @include center;
+ }

@@ -1,0 +1,26 @@
+#Hero-Section {
+    position: relative;
+
+    .background {
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        max-width: 99.9%;
+        z-index: -1;
+    }
+
+    .background-image {
+        position: absolute;
+        width: 100vw;
+        max-width: 99.9%;
+    }
+
+    .container {
+        padding-top: 2em;
+
+        h1 {
+            line-height: 1.1;
+            padding-top:0.2em;
+        }
+    }
+}

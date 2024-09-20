@@ -1,0 +1,26 @@
+#Our-Story {
+    position: relative;
+    padding-top: 10rem;
+
+    .background-image {
+        position: absolute;
+        left: 20%;
+        top: 18%;
+        width: 61vw;
+    }
+
+    h2 {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    h3 {
+        font-size: 40px;
+        padding-bottom: 2rem;
+    }
+
+    .btn {
+        margin-top: 5rem;
+        margin-bottom: 11rem;
+    }
+}
