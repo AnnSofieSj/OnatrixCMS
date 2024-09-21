@@ -359,3 +359,11 @@ p {
 #Success img:not(.background-image) {
   margin-top: 3rem;
 }
+
+#footer p {
+  color: var(--color-primary);
+  padding: 1em 0;
+}
+#footer .credit {
+  color: var(--color-secondary);
+}

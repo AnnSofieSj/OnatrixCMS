@@ -24,7 +24,9 @@
         <main>
             @RenderBody()
         </main>
-        <footer></footer>
+        <footer>
+            @await Html.PartialAsync("partials/static/footer.cshtml")
+        </footer>
     </div>    
     <script src="/scripts/main.js"></script>
 </body>
