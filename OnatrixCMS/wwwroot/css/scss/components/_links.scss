@@ -21,6 +21,19 @@ a {
     }
 }
 
+.nav-link {
+    padding: 0 2em;
+    color: var(--color-primary) !important;
+    font-weight:700;
+    transition: color 0.25s ease-in-out;
+
+    &:hover,
+    &.active {
+        color: var(--color-secondary) !important;
+        text-decoration: none;
+    }
+}
+
 .socialmedia-link {
     padding-right: 0.8em;
     padding-left: 0.8em;
