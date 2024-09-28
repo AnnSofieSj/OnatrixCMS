@@ -413,3 +413,75 @@ p {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+#service-page .container .headline {
+  text-align: center;
+  padding: 2em 16.5em 2em 16.5em;
+}
+#service-page .container .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+#service-page .container .services a {
+  border: 2px solid var(--color-gray);
+  padding: 1em 0 1em 0;
+}
+#service-page .container .services a:hover {
+  box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+  border-radius: 1%;
+  background-color: var(--color-gray);
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+#service-page .container .services a .item .header {
+  text-align: center;
+}
+#service-page .container .services a .item .footer {
+  padding: 1em 2em 0 2em;
+  color: var(--color-default);
+}
+
+#service-details .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 2rem;
+}
+#service-details .container .content img {
+  width: 100%;
+}
+
+#project-page .container .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding: 3em 0 2em 0;
+}
+#project-page .container .projects a {
+  border-bottom: 2px solid var(--color-gray);
+  padding: 1em 2em 1em 2em;
+}
+#project-page .container .projects a:hover {
+  box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+  border-radius: 1%;
+  background-color: var(--color-gray);
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+#project-page .container .projects a .item {
+  display: grid;
+  grid-template-areas: "body body header header header" "body body footer footer footer" "body body footer footer footer";
+}
+#project-page .container .projects a .item .header {
+  text-align: center;
+  grid-area: header;
+}
+#project-page .container .projects a .item .body {
+  grid-area: body;
+}
+#project-page .container .projects a .item .footer {
+  grid-area: footer;
+  padding: 1em 2em 0 2em;
+  color: var(--color-default);
+}

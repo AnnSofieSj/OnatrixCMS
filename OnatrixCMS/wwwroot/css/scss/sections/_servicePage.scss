@@ -1,0 +1,42 @@
+#service-page {
+    .container {
+        .headline {
+            text-align: center;
+            padding: 2em 16.5em 2em 16.5em;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2em;
+            padding-bottom: 2em;
+
+            a {
+                border: 2px solid var(--color-gray);
+                padding: 1em 0 1em 0;
+
+                &:hover {
+                    box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+                    border-radius: 1%;
+                    background-color: var(--color-gray);
+                    text-decoration: none;
+                    transition: background-color 0.1s ease-in-out;
+                }
+
+                .item {
+                    .header {
+                        text-align: center;
+                    }
+
+                    .body {
+                    }
+
+                    .footer {
+                        padding: 1em 2em 0 2em;
+                        color: var(--color-default);
+                    }
+                }
+            }
+        }
+    }
+}

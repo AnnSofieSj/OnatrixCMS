@@ -1,0 +1,50 @@
+#project-page {
+    .container {
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            padding: 3em 0 2em 0;
+
+            a {
+                border-bottom: 2px solid var(--color-gray);
+                padding: 1em 2em 1em 2em;
+
+                &:hover {
+                    box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+                    border-radius: 1%;
+                    background-color: var(--color-gray);
+                    text-decoration: none;
+                    transition: background-color 0.1s ease-in-out;
+                }
+
+            
+
+                .item {
+                    display: grid;
+                    grid-template-areas:
+                        'body body header header header' 
+                        'body body footer footer footer' 
+                        'body body footer footer footer';
+
+
+                    .header {
+                        text-align: center;
+                        grid-area: header;
+                    }
+
+                    .body {
+                        grid-area: body;
+                    }
+
+                    .footer {
+                        grid-area: footer;
+                        padding: 1em 2em 0 2em;
+                        color: var(--color-default);
+                    }
+                }
+            }
+        }
+    }
+}
