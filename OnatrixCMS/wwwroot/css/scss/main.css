@@ -485,3 +485,33 @@ p {
   padding: 1em 2em 0 2em;
   color: var(--color-default);
 }
+
+#get-in-contact {
+  background-color: var(--color-gray);
+  padding-top: 100px;
+  position: relative;
+}
+#get-in-contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+#get-in-contact .background-image {
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+}
+#get-in-contact .image {
+  position: relative;
+  z-index: 2;
+}
+#get-in-contact .contact-info {
+  padding-left: 15rem;
+  align-content: center;
+}
+#get-in-contact .contact-info i {
+  color: var(--color-secondary);
+  padding-right: 1em;
+}
+#get-in-contact .contact-info .info {
+  padding-left: 2rem;
+}

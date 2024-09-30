@@ -1,0 +1,34 @@
+#get-in-contact {
+    background-color: var(--color-gray);
+    padding-top: 100px;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .background-image {
+        position: absolute;
+        z-index: 1;
+        top: 6%;
+    }
+
+    .image {
+        position: relative;
+        z-index: 2;
+    }
+
+    .contact-info {
+        padding-left: 15rem;
+        align-content:center;
+        i {
+            color: var(--color-secondary);
+            padding-right:1em;         
+        }
+
+        .info {
+            padding-left:2rem;
+        }
+    }
+}

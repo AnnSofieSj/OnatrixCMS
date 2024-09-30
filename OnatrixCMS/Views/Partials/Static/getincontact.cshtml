@@ -1,0 +1,25 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@inject Umbraco.Cms.Web.Common.UmbracoHelper UmbracoHelper
+@{
+    var backgroundImage = Umbraco.Media(Guid.Parse("ec943255-d907-4e0b-a348-1594da134ee3"))?.Url();
+    var contactImage = Umbraco.Media(Guid.Parse("610ab4b4-7ba3-4929-ad3a-38ad08cebfa5"))?.Url();
+}
+
+<section id="get-in-contact">
+    <div class="container">
+        <img class="background-image" src="@backgroundImage"> </img>
+        <img class="image" src="@contactImage"></img>
+        <div class="contact-info">
+            <h2>Let us know about your next project</h2>
+            <div>
+                <p><i class="fa-light fa-location-dot"></i>Office location</p>
+                <p class="info">Klarabergsviadukten 90, 111 52 Stockholm</p>
+                <p><i class="fa-light fa-phone-flip"></i>Phone number</p>  
+                <p class="info">+46 8 123 456 75</p>
+                <p><i class="fa-light fa-envelope"></i>E-mail address</p>
+                <p class="info">sales@onatrix.com</p>
+            </div>
+        </div>
+    </div>
+</section>
