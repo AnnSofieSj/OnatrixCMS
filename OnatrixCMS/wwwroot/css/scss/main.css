@@ -300,21 +300,40 @@ p {
   justify-content: space-between;
 }
 
-#Our-Services .background {
+#our-service .background {
   position: absolute;
   height: 100%;
   width: 100vw;
   max-width: 99.9%;
   z-index: -1;
 }
-#Our-Services h6 {
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Our-Services h2 {
+#our-service .headline {
   text-align: center;
+  padding: 2em 16.5em 2em 16.5em;
+}
+#our-service .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+#our-service .services a {
+  border: 2px solid var(--color-gray);
+  padding: 1em 0 1em 0;
+}
+#our-service .services a:hover {
+  box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+  border-radius: 1%;
+  background-color: var(--color-light);
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+#our-service .services a .item .header {
+  text-align: center;
+}
+#our-service .services a .item .footer {
+  padding: 1em 2em 0 2em;
+  color: var(--color-default);
 }
 
 #Our-Story {
@@ -514,4 +533,43 @@ p {
 }
 #get-in-contact .contact-info .info {
   padding-left: 2rem;
+}
+
+#recent-projects .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1em 0 1em 0;
+}
+#recent-projects .projects a:hover {
+  box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+  border-radius: 1%;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+#recent-projects .projects a:hover .description {
+  background-color: var(--color-primary);
+}
+#recent-projects .projects a .item {
+  position: relative;
+}
+#recent-projects .projects a .item .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#recent-projects .projects a .item .description {
+  background-color: var(--color-border-dark-transparent);
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+}
+#recent-projects .projects a .item .description h6 {
+  padding-left: 1em;
+  color: var(--color-light);
+}
+#recent-projects .projects a .item .description p {
+  padding-left: 1em;
+  color: var(--color-light);
+  font-size: 14px;
 }

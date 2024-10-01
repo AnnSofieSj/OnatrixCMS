@@ -1,0 +1,56 @@
+#recent-projects {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1em 0 1em 0;
+
+        a {
+
+            &:hover {
+                box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+                border-radius: 1%;
+                text-decoration: none;
+                transition: background-color 0.1s ease-in-out;
+
+                .description {
+                    background-color: var(--color-primary);
+                }
+            }
+
+
+
+            .item {
+                position: relative;
+
+                .image {
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .description {
+                    background-color: var(--color-border-dark-transparent);
+                    position: absolute;
+                    bottom: 0%;
+                    left: 0;
+                    right: 0;
+
+                    h6 {
+                        padding-left: 1em;
+                        color: var(--color-light);
+                    }
+
+                    p {
+                        padding-left: 1em;
+                        color: var(--color-light);
+                        font-size: 14px;
+                    }
+
+                  
+                }
+            }
+        }
+    }
+}
