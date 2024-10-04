@@ -272,30 +272,30 @@ p {
 #header .container .nav-menu {
   padding-right: 8em;
 }
-#Hero-Section {
+#hero-section {
   position: relative;
 }
-#Hero-Section .background {
+#hero-section .background {
   position: absolute;
   height: 100%;
   width: 100vw;
   max-width: 99.9%;
   z-index: -1;
 }
-#Hero-Section .background-image {
+#hero-section .background-image {
   position: absolute;
   width: 100vw;
   max-width: 99.9%;
 }
-#Hero-Section .container {
+#hero-section .container {
   padding-top: 2em;
 }
-#Hero-Section .container h1 {
+#hero-section .container h1 {
   line-height: 1.1;
   padding-top: 0.2em;
 }
 
-#Partners .slides {
+#partners .slides {
   display: flex;
   justify-content: space-between;
 }
@@ -336,60 +336,60 @@ p {
   color: var(--color-default);
 }
 
-#Our-Story {
+#our-story {
   position: relative;
   padding-top: 10rem;
 }
-#Our-Story .background-image {
+#our-story .background-image {
   position: absolute;
   top: 6%;
   z-index: -5;
 }
-#Our-Story h2 {
+#our-story h2 {
   padding-left: 20%;
   padding-right: 20%;
 }
-#Our-Story h3 {
+#our-story h3 {
   font-size: 40px;
   padding-bottom: 1.5rem;
 }
-#Our-Story .btn {
+#our-story .btn {
   margin-top: 3rem;
   margin-bottom: 8rem;
 }
 
-#Success {
+#success {
   position: relative;
   /* .image-success {
       margin-top: 3rem;
   }*/
 }
-#Success .background {
+#success .background {
   position: absolute;
   height: 75%;
   width: 100vw;
   max-width: 99.9%;
   z-index: -1;
 }
-#Success .background-image {
+#success .background-image {
   position: absolute;
   top: 6%;
 }
-#Success h1 {
+#success h1 {
   color: var(--color-secondary);
 }
-#Success h2 {
+#success h2 {
   color: var(--color-light);
 }
-#Success h6 {
+#success h6 {
   padding-top: 1rem;
 }
-#Success p {
+#success p {
   color: var(--color-light);
   padding-right: 2em;
   padding-left: 2em;
 }
-#Success img:not(.background-image) {
+#success img:not(.background-image) {
   margin-top: 3rem;
 }
 
@@ -541,12 +541,10 @@ p {
   padding: 1em 0 1em 0;
 }
 #recent-projects .projects a:hover {
-  box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+  box-shadow: 2px 2px 8px 8px var(--color-border-gray);
   border-radius: 1%;
   text-decoration: none;
-  transition: background-color 0.1s ease-in-out;
-}
-#recent-projects .projects a:hover .description {
+  transition: all 0.1s ease-in-out;
   background-color: var(--color-primary);
 }
 #recent-projects .projects a .item {

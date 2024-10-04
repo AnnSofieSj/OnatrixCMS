@@ -7,17 +7,12 @@
         a {
 
             &:hover {
-                box-shadow: 2px 2px 3px 2px var(--color-border-dark-transparent);
+                box-shadow: 2px 2px 8px 8px var(--color-border-gray);
                 border-radius: 1%;
                 text-decoration: none;
-                transition: background-color 0.1s ease-in-out;
-
-                .description {
-                    background-color: var(--color-primary);
-                }
+                transition: all 0.1s ease-in-out;
+                background-color: var(--color-primary);
             }
-
-
 
             .item {
                 position: relative;
@@ -47,8 +42,6 @@
                         color: var(--color-light);
                         font-size: 14px;
                     }
-
-                  
                 }
             }
         }
