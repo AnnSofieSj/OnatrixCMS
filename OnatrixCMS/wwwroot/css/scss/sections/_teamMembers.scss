@@ -1,0 +1,42 @@
+#team-members {
+    h6 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 0 7em 0 7em;
+    }
+
+    .image-slider {
+
+        .slides {
+            display: flex;
+            gap: 2em;
+            padding-bottom: 1rem;
+
+            .slide-item {
+                border: 1px solid var(--color-gray);
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                h4 {
+                    padding-top: 0.5em;
+                    padding-left: 1rem;
+                    margin-bottom: 0;
+                    color: var(--color-primary);
+                }
+
+                p {
+                    padding-left: 1rem;
+                    color: var(--color-dark-gray);
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+#reviews {
+    position: relative;
+
+    .background {
+        position: absolute;
+        width: 100vw;
+        max-width: 99.9%;
+        bottom: 0%;
+        top: 12%;
+        z-index: -1;
+    }
+
+    h6 {
+        padding-top: 2em;
+        padding-left: 16rem;
+    }
+
+    h2 {
+        padding-left: 16rem;
+        padding-right: 5rem;
+    }
+
+    p {
+        padding-left: 16rem;
+        padding-right: 5rem;
+    }
+
+    .rating {
+        padding-left: 16rem;
+    }
+
+    .kevin {
+        max-width: 100%;
+        height: auto;
+    }
+}

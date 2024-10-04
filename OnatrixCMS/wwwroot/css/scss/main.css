@@ -27,11 +27,11 @@ body {
 }
 
 .spacing-top {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .spacing-bottom {
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
 .center {
@@ -506,9 +506,15 @@ p {
 }
 
 #get-in-contact {
-  background-color: var(--color-gray);
   padding-top: 100px;
   position: relative;
+}
+#get-in-contact .background {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  max-width: 99.9%;
+  z-index: -1;
 }
 #get-in-contact .container {
   display: flex;
@@ -542,10 +548,10 @@ p {
 }
 #recent-projects .projects a:hover {
   box-shadow: 2px 2px 8px 8px var(--color-border-gray);
-  border-radius: 1%;
   text-decoration: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: var(--color-primary);
+  transform: scale(1.1);
 }
 #recent-projects .projects a .item {
   position: relative;
@@ -570,4 +576,105 @@ p {
   padding-left: 1em;
   color: var(--color-light);
   font-size: 14px;
+}
+
+#about-us em span {
+  font-weight: 300;
+  color: var(--color-default);
+}
+#about-us span {
+  font-weight: 400;
+  color: var(--color-default);
+}
+
+#reviews {
+  position: relative;
+}
+#reviews .background {
+  position: absolute;
+  width: 100vw;
+  max-width: 99.9%;
+  bottom: 0%;
+  top: 12%;
+  z-index: -1;
+}
+#reviews h6 {
+  padding-top: 2em;
+  padding-left: 16rem;
+}
+#reviews h2 {
+  padding-left: 16rem;
+  padding-right: 5rem;
+}
+#reviews p {
+  padding-left: 16rem;
+  padding-right: 5rem;
+}
+#reviews .rating {
+  padding-left: 16rem;
+}
+#reviews .kevin {
+  max-width: 100%;
+  height: auto;
+}
+
+#team-members h6 {
+  text-align: center;
+  margin-bottom: 0;
+}
+#team-members h2 {
+  text-align: center;
+  padding: 0 7em 0 7em;
+}
+#team-members .image-slider .slides {
+  display: flex;
+  gap: 2em;
+  padding-bottom: 1rem;
+}
+#team-members .image-slider .slides .slide-item {
+  border: 1px solid var(--color-gray);
+}
+#team-members .image-slider .slides .slide-item img {
+  max-width: 100%;
+  height: auto;
+}
+#team-members .image-slider .slides .slide-item h4 {
+  padding-top: 0.5em;
+  padding-left: 1rem;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+#team-members .image-slider .slides .slide-item p {
+  padding-left: 1rem;
+  color: var(--color-dark-gray);
+  font-size: 13px;
+}
+
+#staff .image-slider .slides {
+  display: flex;
+  gap: 2em;
+  padding-bottom: 1rem;
+}
+#staff .image-slider .slides .slide-item {
+  border: 1px solid var(--color-gray);
+}
+#staff .image-slider .slides .slide-item img {
+  max-width: 100%;
+  height: auto;
+}
+#staff .image-slider .slides .slide-item h4 {
+  padding-top: 0.5em;
+  padding-left: 1rem;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+#staff .image-slider .slides .slide-item p {
+  padding-left: 1rem;
+  color: var(--color-dark-gray);
+  font-size: 13px;
+}
+
+#map .background-image {
+  width: 100vw;
+  max-width: 99.9%;
 }

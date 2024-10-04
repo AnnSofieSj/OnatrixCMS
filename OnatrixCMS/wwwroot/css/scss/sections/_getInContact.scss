@@ -1,7 +1,14 @@
-#get-in-contact {
-    background-color: var(--color-gray);
+#get-in-contact {   
     padding-top: 100px;
     position: relative;
+
+    .background {
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        max-width: 99.9%;
+        z-index: -1;
+    }
 
     .container {
         display: flex;
@@ -21,14 +28,15 @@
 
     .contact-info {
         padding-left: 15rem;
-        align-content:center;
+        align-content: center;
+
         i {
             color: var(--color-secondary);
-            padding-right:1em;         
+            padding-right: 1em;
         }
 
         .info {
-            padding-left:2rem;
+            padding-left: 2rem;
         }
     }
 }
