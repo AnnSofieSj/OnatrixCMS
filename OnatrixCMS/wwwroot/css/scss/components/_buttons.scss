@@ -9,3 +9,8 @@
     font-size: 1.6rem;
 }
 
+.form-button {
+    @include btn;
+    display: block;
+    margin: 0 auto;    
+}

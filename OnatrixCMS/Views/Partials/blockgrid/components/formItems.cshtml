@@ -1,0 +1,56 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+    var inputLabelText = Model?.Content.Value<string>("inputLabelText") ?? "";
+    var inputUniqueNameText = Model?.Content.Value<string>("inputUniqueNameText") ?? "";
+    var inputPlaceholderText = Model?.Content.Value<string>("inputPlaceholderText") ?? "";
+    var inputLabelEmail = Model?.Content.Value<string>("inputLabelEmail") ?? "";
+    var inputUniqueNameEmail = Model?.Content.Value<string>("inputUniqueNameEmail") ?? "";
+    var inputPlaceholderEmail = Model?.Content.Value<string>("inputPlaceholderEmail") ?? "";
+    var inputLabelPhonenumber = Model?.Content.Value<string>("inputLabelPhonenumber") ?? "";
+    var inputUniqueNamePhonenumber = Model?.Content.Value<string>("inputUniqueNamePhonenumber") ?? "";
+    var inputPlaceholderPhonenumber = Model?.Content.Value<string>("inputPlaceholderPhonenumber") ?? "";    
+    var inputLabelArea = Model?.Content.Value<string>("inputLabelArea") ?? "";
+    var inputUniqueNameArea = Model?.Content.Value<string>("inputUniqueNameArea") ?? "";
+    var inputPlaceholderArea = Model?.Content.Value<string>("inputPlaceholderArea") ?? "";   
+    var buttonText = Model?.Content.Value<string>("buttonText") ?? "";
+    var buttonType = Model?.Content.Value<string>("buttonType") ?? "";     
+}
+
+<div class="contact-form">
+    <form onsubmit="handelContactForm(event)" novalidate>
+        <div class="form-content">
+            @if (!string.IsNullOrEmpty(inputUniqueNameText))
+            {
+            <div class="form-input-group">
+                <label class="form-label" for="@inputUniqueNameText">@inputLabelText</label>
+                <input id="@inputUniqueNameText" name="@inputUniqueNameText" type="text" placeholder="@inputPlaceholderText" class="form-input">           
+            </div>
+            }
+            @if (!string.IsNullOrEmpty(inputUniqueNameEmail))
+            {
+            <div class="form-input-group">
+                <label class="form-label" for="@inputUniqueNameEmail">@inputLabelEmail</label>
+                <input id="@inputUniqueNameEmail" name="@inputUniqueNameEmail" type="email" placeholder="@inputPlaceholderEmail" class="form-input">           
+            </div>
+            }
+            @if (!string.IsNullOrEmpty(inputUniqueNamePhonenumber))
+            {
+            <div class="form-input-group">
+                <label class="form-label" for="@inputUniqueNamePhonenumber">@inputLabelPhonenumber</label>
+                <input id="@inputUniqueNamePhonenumber" name="@inputUniqueNamePhonenumber" type="tel" placeholder="@inputPlaceholderPhonenumber" class="form-input">           
+            </div>
+            }
+            @if (!string.IsNullOrEmpty(inputUniqueNameArea))
+            {
+            <div class="form-input-group">
+                <label class="form-label" for="@inputUniqueNameArea">@inputLabelArea</label>
+                <textarea id="@inputUniqueNameArea" name="@inputUniqueNameArea" type="text" placeholder="@inputPlaceholderArea" class="text-area-input"></textarea>           
+            </div>
+            }           
+        </div>
+        <button type="@buttonType" class="form-button btn-submit btn-primary">@buttonText</button>
+    </form>
+</div>
