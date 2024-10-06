@@ -536,7 +536,7 @@ form .form-content textarea::placeholder {
 }
 #service-details .container .sidbar-about .form {
   padding: 2em 1em 2em 1em;
-  border-radius: 1%;
+  border-radius: 2%;
 }
 #service-details .container .sidbar-about .form h5 {
   color: var(--color-accent);
@@ -560,6 +560,22 @@ form .form-content textarea::placeholder {
   width: 100%;
 }
 
+#project-details .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 2rem;
+}
+#project-details .container .content {
+  padding-right: 4rem;
+}
+#project-details .container .content img {
+  width: 100%;
+}
+
+#project-page .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 #project-page .container .projects {
   display: grid;
   grid-template-columns: 1fr;
@@ -668,6 +684,9 @@ form .form-content textarea::placeholder {
   font-size: 14px;
 }
 
+#about-us {
+  padding-bottom: 4rem;
+}
 #about-us em span {
   font-weight: 300;
   color: var(--color-default);
@@ -682,11 +701,17 @@ form .form-content textarea::placeholder {
 }
 #reviews .background {
   position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  max-width: 99.9%;
+  z-index: -1;
+  /*position: absolute;
   width: 100vw;
   max-width: 99.9%;
   bottom: 0%;
   top: 12%;
-  z-index: -1;
+  z-index: -1;*/
 }
 #reviews h6 {
   padding-top: 2em;
@@ -704,7 +729,7 @@ form .form-content textarea::placeholder {
   padding-left: 16rem;
 }
 #reviews .kevin {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -823,4 +848,60 @@ form .form-content textarea::placeholder {
 }
 #about-us .container-fluid .container .form-button {
   margin-bottom: 2rem;
+}
+
+.sidebar-tags {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-top: 10rem;
+}
+.sidebar-tags .tags {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.sidebar-tags .tags .tag-link {
+  margin: 0.2em;
+  padding: 0.5em;
+  border: 1px solid var(--color-border-gray);
+  border-radius: 50px 50px 50px 50px;
+  min-width: 4em;
+}
+.sidebar-tags .tags .tag-link span {
+  font-size: 13px;
+  color: var(--color-primary);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-tags .form {
+  padding: 2em 1em 2em 1em;
+  border-radius: 2%;
+}
+.sidebar-tags .form h5 {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.sidebar-tags .form p {
+  font-size: 14px;
+}
+.sidebar-tags .form input {
+  padding: 1rem;
+  border-radius: 2%;
+  border: 1px solid var(--color-border-gray);
+}
+.sidebar-tags .form input::placeholder {
+  opacity: 0.8;
+}
+
+#question-form {
+  padding-top: 4rem;
+}
+#question-form .form-content {
+  padding: 0;
+}
+#question-form .form-button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }

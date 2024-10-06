@@ -1,0 +1,17 @@
+#project-details {
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding-top: 2rem;
+
+       
+
+        .content {
+            padding-right: 4rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

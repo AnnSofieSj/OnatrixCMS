@@ -1,0 +1,51 @@
+.sidebar-tags {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    padding-top: 10rem;
+
+    .tags {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+
+        .tag-link {
+            margin: 0.2em;
+            padding: 0.5em;
+            border: 1px solid var(--color-border-gray);
+            border-radius: 50px 50px 50px 50px;
+            min-width: 4em;
+
+
+            span {
+                font-size: 13px;
+                color: var(--color-primary);
+                font-weight: 400;
+                @include center;
+            }
+        }
+    }
+
+    .form {
+        padding: 2em 1em 2em 1em;
+        border-radius: 2%;
+
+        h5 {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        input {
+            padding: 1rem;
+            border-radius: 2%;
+            border: 1px solid var(--color-border-gray);
+
+            &::placeholder {
+                opacity: 0.8;
+            }
+        }
+    }
+}

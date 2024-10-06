@@ -1,0 +1,22 @@
+﻿
+<section id="question-form" class="container">
+    <h5>Have a question ?</h5>
+    
+    <form onsubmit="handelContactForm(event)" novalidate>  
+        <div class="form-content">
+            <div class="form-input-group">          
+                <label class="form-label" for="name"></label>
+                <input id="name" name="name" type="text" placeholder="Name" class="form-input">  
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="email"></label>
+                <input id="email" name="email" type="email" placeholder="E-mail address" class="form-input"> 
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="text"></label>
+                <textarea id="text" name="text" type="text" placeholder="Question" class="text-area-input"></textarea>           
+            </div>        
+        </div>
+        <button type="submit" class="form-button btn-submit btn-primary">Submit</button>
+    </form>
+</section>

@@ -1,5 +1,7 @@
 #project-page {
     .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
 
         .projects {
             display: grid;
@@ -19,14 +21,12 @@
                     transition: background-color 0.1s ease-in-out;
                 }
 
-            
+
 
                 .item {
                     display: grid;
                     grid-template-areas:
-                        'body body header header header' 
-                        'body body footer footer footer' 
-                        'body body footer footer footer';
+                        'body body header header header' 'body body footer footer footer' 'body body footer footer footer';
 
 
                     .header {
@@ -46,5 +46,6 @@
                 }
             }
         }
+        
     }
 }

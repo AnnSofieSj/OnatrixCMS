@@ -9,14 +9,14 @@
     @await Html.PartialAsync("partials/static/breadcrumb.cshtml")
 }
 
-<section id="service-details">
+<section id="project-details">
     <div class="container">
-        <aside>
-            
-        </aside>
         <div class="content">
         @Model.Value("pageContent")
         </div>
+        <aside>
+            @await Html.PartialAsync("partials/static/sidebarTags.cshtml")
+        </aside>
     </div>
 </section>
 @await Html.PartialAsync("partials/static/getincontact.cshtml")

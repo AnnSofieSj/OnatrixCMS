@@ -19,7 +19,7 @@
 }
 
 <section id="project-page">
-    <div class="container">
+    <div class="container">        
         <div class="projects">
         @foreach (var item in selection) {
             var image = item?.Value<IPublishedContent>("thumbnailImage")?.Url() ?? "";
@@ -40,9 +40,9 @@
             </a>                    
         }
         </div>
+        <aside>
+            @await Html.PartialAsync("partials/static/sidebarTags.cshtml")
+        </aside>
     </div>
-    <aside class="project-sidebar">
-
-    </aside>
 </section>
 @await Html.PartialAsync("partials/static/getincontact.cshtml")
