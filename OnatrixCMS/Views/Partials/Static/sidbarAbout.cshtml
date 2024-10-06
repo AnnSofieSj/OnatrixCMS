@@ -1,0 +1,22 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@inject Umbraco.Cms.Web.Common.UmbracoHelper UmbracoHelper
+@{
+    var asideImage = Umbraco.Media(Guid.Parse("4e94e86a-c0b2-4b4e-954d-769c1f2d4db2"))?.Url();
+}
+
+<div class="sidbar-about">
+    <h4>About us</h4>
+    <div class="image-aside"><img src="@asideImage" alt="people in a meeting"></img></div>
+    <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+
+    <div class="form bg-primary">
+        <h5>How can we help you?</h5>
+        <p>online support 24/7, we are here to help you</p>
+        <form onsubmit="handelContactForm(event)" novalidate>            
+            <label class="form-label" for="email"></label>
+            <input id="email" name="email" type="email" placeholder="E-mail address" class="form-input">             
+        </form>
+    </div>
+</div>
+

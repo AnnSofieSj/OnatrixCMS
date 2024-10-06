@@ -522,6 +522,40 @@ form .form-content textarea::placeholder {
   grid-template-columns: 1fr 3fr;
   padding-top: 2rem;
 }
+#service-details .container .sidbar-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-right: 1rem;
+}
+#service-details .container .sidbar-about .image-aside {
+  padding-bottom: 2rem;
+}
+#service-details .container .sidbar-about .image-aside img {
+  width: 100%;
+  height: auto;
+}
+#service-details .container .sidbar-about .form {
+  padding: 2em 1em 2em 1em;
+  border-radius: 1%;
+}
+#service-details .container .sidbar-about .form h5 {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+#service-details .container .sidbar-about .form p {
+  font-size: 14px;
+}
+#service-details .container .sidbar-about .form input {
+  padding: 1rem;
+  border-radius: 2%;
+  border: 1px solid var(--color-border-gray);
+}
+#service-details .container .sidbar-about .form input::placeholder {
+  opacity: 0.8;
+}
+#service-details .container .content {
+  padding-left: 4rem;
+}
 #service-details .container .content img {
   width: 100%;
 }
@@ -566,6 +600,7 @@ form .form-content textarea::placeholder {
 }
 #get-in-contact .background {
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100vw;
   max-width: 99.9%;

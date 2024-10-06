@@ -13,7 +13,7 @@
 <section id="service-details">
     <div class="container">
         <aside>
-            <h4>About us</h4>
+            @await Html.PartialAsync("partials/static/sidbarAbout.cshtml")
         </aside>
         <div class="content">
         @Model.Value("pageContent")
